@@ -9,6 +9,11 @@ def file_hash_start(chpath):
        if os.path.isfile(p)]
     path+=[p for p in glob.glob(chpath+'/risumusume.8192/*', recursive=True)
        if os.path.isfile(p)]
+
+    #print(path)
+    path.sort()#ソートを実行
+    #print(path)
+
     hash=File2hash()
     result=list()
     #print(path)
